@@ -1,0 +1,35 @@
+@mixin font ($size:16, $weight:400, $height:100% ) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}
+
+@mixin media-laptop(){
+    @media(max-width: 1200px){
+        @content
+    }
+};
+
+@mixin media-laptopsmall(){
+    @media(max-width: 1024px){
+        @content
+    }
+};
+
+@mixin media-tablet(){
+    @media(max-width: 768px){
+        @content
+    }
+};
+
+@mixin media-mobile(){
+    @media(max-width: 480px){
+        @content
+    }
+};
+
+@mixin media-mobilesmall(){
+    @media(max-width: 320px){
+        @content
+    }
+};

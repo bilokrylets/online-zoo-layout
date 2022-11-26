@@ -1,0 +1,58 @@
+.btn-rounded{
+    display: block;
+    width: 298px;
+    height: 54px;
+    background-color: $color-orange;
+    border-radius: 25px;
+    border: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    text-decoration: none; 
+    @include font(16px,500);
+    text-transform: uppercase;
+
+    transition: all 0.2s linear;
+
+    &:hover{
+        background-color: #E47209
+    }
+
+    &:active {
+        background-color: $color-green;
+        transform: translateY(1px);
+   
+    }
+}
+
+.btn-rectangle {
+    display: block;
+    width: 298px;
+    height: 54px;
+    background-color: $color-orange;
+    border-radius: 5px;
+    border: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    text-decoration: none; 
+    @include font(16px,500);
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+    
+    &:hover{
+        background-color: #E47209
+    }
+
+    &:active {
+        background-color: $color-green;
+        transform: translateY(1px);
+   
+    }
+}

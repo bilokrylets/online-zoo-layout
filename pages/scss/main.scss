@@ -1,0 +1,31 @@
+// normalize
+@import './base/normalize/import-now';
+
+
+//Abstracts
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+
+//base
+@import './base/base';
+
+//components 
+@import './components/buttons';
+@import './components/forms';
+@import './components/burger';
+
+
+// layout
+@import './layout/wrapper';
+@import './layout/header';
+@import './layout/s1_watch';
+@import './layout/s2_backstage';
+@import './layout/s3_animal-cards';
+@import './layout/s4_pick-feed';
+@import './layout/s5_testimonials';
+@import './layout/footer';
+
+
+// pages
+@import './pages/donate';

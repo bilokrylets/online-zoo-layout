@@ -1,0 +1,176 @@
+.donate-wrapper {
+    background: $color-orange_gradient;
+    display: flex;
+    justify-content: center;
+}
+.donate-container{
+    margin: 40px 30px 180px;
+    width: 1160px;
+    max-width: 1160px;
+    
+    @include media-laptopsmall {
+        margin-bottom: 30px;
+    }
+    
+    @include media-tablet{
+        margin: 30px 20px 50px;
+    }
+    @include media-mobile{
+        margin: 30px 12px 
+    }
+}
+
+.donate-text{
+    max-width: 1160px;
+
+    .donate-title {
+        font-size:  36px;
+
+  
+        color: #FFFFFF;
+        text-transform: capitalize;
+
+        @include media-laptop{
+            margin-right: 100px;
+        }
+
+        @include media-tablet{
+            @include font(24px,400,120%);
+            margin-right: 0px;
+        }
+
+        
+    }
+    
+    .donate-description {
+        margin-top: 10px;
+        color: white;
+        @include font(16px,500,140%);
+
+        @include media-tablet{
+            margin-top: 20px;
+        }
+
+
+    }
+    
+    .donate-inf {
+        margin: 40px 0 60px;
+        font-size: 36px;
+       
+        color: #FE9013;
+
+        @include media-tablet{
+            margin: 30px 0;
+        }
+
+        @include media-mobile{
+            font-size: 24px;
+        }
+    }
+    
+}
+
+.donate-block {
+ 
+    
+    background: $color-frosted_glass_white;
+    border-radius: 20px;
+    max-width: 1160px;
+  
+        .donate-block-container{
+            padding: 40px 92px 62px 92px;
+           
+            @include media-tablet{
+                padding: 30px 0
+            }
+
+            @include media-mobile{
+                padding: 20px 0
+            }
+            .donate-block-title {
+                @include font(48px,400);
+                font-size: 48px;
+                color: #FE9013;
+                text-align: center;
+                margin-bottom: 20px;
+                
+                @include media-mobile{
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+            }
+            .donate-block-text {
+                color: $color-black_blue;
+                @include font(24px,400,120%);
+                
+                @include media-tablet{
+                    margin: 0 40px;
+
+                    text-align: center;
+                }
+                
+                @include media-mobile{
+                    margin: 0;
+                    @include font(16px,400,140%);
+                }
+    
+            }
+            .animal-block {
+                margin-top: 60px;
+                margin-bottom: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                @include media-mobile{
+                    margin: 30px 0 5px;
+                }
+                .animal-day-count {
+                    width: 160px;
+                    margin-left: 10px;
+                    .days {
+                        text-align: center;
+                        @include font(72px,500);
+                        color: black;
+
+                        @include media-mobile{
+                            font-size: 40px;
+                        }
+                    }
+                    .days-description {
+                        font-size: 16px;
+                        color: $color-black_blue;
+
+                        @include media-mobile{
+                            font-size: 9px;
+                            text-align: center;
+                        }
+                    }
+                }
+        
+                .x-icon {
+                    width: 14px;
+                    margin-left: 11px;
+                    margin-right: 64px;
+                }
+                .animal-svg {
+                    width: 284px;
+
+                    @include media-tablet{
+                        width: min(50% , 284);
+                    }
+                    
+                }
+               
+            }
+        
+            .donate-share{
+                font-size: 16px;
+                color: $color-black_blue; 
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+    
+}
