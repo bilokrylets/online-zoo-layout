@@ -1967,17 +1967,13 @@ h1, h2, h3, h4, h5, h6, p {
   left: 0;
   right: 0;
   z-index: 10000;
+  min-width: 300px;
+  max-width: 300px;
   display: flex;
   align-items: center;
   margin: 0 auto;
   height: auto;
   padding-bottom: 30px;
-}
-@media (max-width: 1200px) {
-  .card-active {
-    min-width: 300px;
-    max-width: 300px;
-  }
 }
 @media (max-width: 768px) {
   .card-active {

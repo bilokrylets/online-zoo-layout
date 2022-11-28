@@ -197,7 +197,8 @@
     left: 0;
     right: 0;
     z-index: 10000;
-    
+    min-width: 300px;
+    max-width: 300px;
 
     display: flex;
     align-items: center;
@@ -205,10 +206,7 @@
     height: auto;
     padding-bottom: 30px;
 
-    @include media-laptop{
-        min-width: 300px;
-        max-width: 300px;
-    }
+  
     
     @include media-tablet{
         height: auto;
