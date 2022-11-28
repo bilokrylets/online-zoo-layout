@@ -944,7 +944,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .header-bg-wrapper {
-  background-image: url("/assets/images/watch-bg.jpg");
+  background-image: url("../../assets/images/watch-bg.jpg");
   height: 590px;
   margin-top: -200px;
   position: relative;
@@ -1075,8 +1075,6 @@ h1, h2, h3, h4, h5, h6, p {
     margin-left: 37px;
     width: 256px;
     font-size: 54.3px;
-    font-weight: 700;
-    line-height: 75%;
   }
 }
 @media (max-width: 480px) {
@@ -1085,8 +1083,6 @@ h1, h2, h3, h4, h5, h6, p {
     margin-left: 5px;
     width: 150px;
     font-size: 28px;
-    font-weight: 700;
-    line-height: 75%;
   }
 }
 .watch-title h1 .watch-highlight {
@@ -1365,10 +1361,7 @@ h1, h2, h3, h4, h5, h6, p {
 .cards-arrow.unactive {
   background-color: #767474;
 }
-.cards-arrow.unactive:hover {
-  background-color: #767474;
-}
-.cards-arrow.unactive:active {
+.cards-arrow.unactive:hover, .cards-arrow.unactive:active {
   background-color: #767474;
 }
 @media (max-width: 1200px) {
@@ -1428,7 +1421,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 @media (max-width: 480px) {
   .cards-content-line {
+    max-width: 320px;
     row-gap: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .cards-content-line {
+    max-width: 270px;
   }
 }
 
@@ -1549,12 +1548,14 @@ h1, h2, h3, h4, h5, h6, p {
   .pick-feed-title {
     margin-top: 10px;
     font-size: 42px;
+    font-size: 42px;
     font-weight: 400;
     line-height: 100%;
   }
 }
 @media (max-width: 480px) {
   .pick-feed-title {
+    font-size: 24px;
     font-size: 24px;
     font-weight: 400;
     line-height: 100%;
@@ -1861,6 +1862,10 @@ h1, h2, h3, h4, h5, h6, p {
   border: 1px solid pink;
   border-radius: 20px;
   margin-bottom: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media (max-width: 1200px) {
   .testimonials-card {
@@ -1873,6 +1878,9 @@ h1, h2, h3, h4, h5, h6, p {
     height: 110px;
     margin-right: 10px;
   }
+}
+.testimonials-card:hover {
+  cursor: pointer;
 }
 
 .card-header {
@@ -1978,7 +1986,12 @@ h1, h2, h3, h4, h5, h6, p {
 @media (max-width: 768px) {
   .card-active {
     height: auto;
-    width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .card-active {
+    width: auto;
+    margin: 0 12px;
   }
 }
 
@@ -2278,7 +2291,6 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 48px;
   font-weight: 400;
   line-height: 100%;
-  font-size: 48px;
   color: #FE9013;
   text-align: center;
   margin-bottom: 20px;

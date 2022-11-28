@@ -5,7 +5,6 @@
     background-color: $color-orange;
     border-radius: 25px;
     border: 0px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +13,6 @@
     text-decoration: none; 
     @include font(16px,500);
     text-transform: uppercase;
-
     transition: all 0.2s linear;
 
     &:hover{
@@ -24,7 +22,6 @@
     &:active {
         background-color: $color-green;
         transform: translateY(1px);
-   
     }
 }
 
@@ -53,6 +50,5 @@
     &:active {
         background-color: $color-green;
         transform: translateY(1px);
-   
     }
 }

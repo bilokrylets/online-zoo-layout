@@ -39,14 +39,11 @@
 }
 .testimonials-content {
     max-width: 1160px;
-
-    
     margin: 0 30px;
     display: flex;
     flex-wrap: nowrap;
     
     gap: 29px;
-
     scroll-behavior: smooth;
     
     &.scrollable{
@@ -61,6 +58,7 @@
         height: 370px;
         flex-wrap: wrap;
         gap: 15px;
+
         &.scrollable{
             overflow-x: hidden;
             overflow-y: scroll;
@@ -73,26 +71,19 @@
     @include media-mobile{
         margin: 0 12px;
     }
-   
 }
 
-
 .testimonials-card {
-   
-    // overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     min-width: 265px;
     height: 385px;
-  
- 
-    // min-width: 268px;
-    background-color: $color-gray_light ;
 
+    background-color: $color-gray_light ;
     border: 1px solid pink;
     border-radius: 20px;
-    
     margin-bottom: 20px;
+    user-select: none;
 
     @include media-laptop{
         min-width: 31%;
@@ -102,6 +93,10 @@
         margin-bottom: 0px;
         height: 110px;
         margin-right: 10px;
+    }
+
+    &:hover{
+        cursor: pointer;
     }
 }
 
@@ -121,12 +116,10 @@
         .testimonials-name {
             @include font();
             color: #000;
-           
         }
 
         .testimonals-details {
             @include font(15px,300);
-
             color: #BDBDBD;
         }
     }
@@ -164,7 +157,6 @@
 .testimonials-content::-webkit-scrollbar {
     width: 8px;
     height: 8px;
-    
   }
 
   .testimonials-content::-webkit-scrollbar-track {
@@ -172,6 +164,7 @@
     border: 1px solid wheat;
     border-radius: 5px; 
     margin: 0 100px;
+
     @include media-tablet{
         margin: 50px 0;
     }
@@ -180,7 +173,6 @@
   /* Handle */
   .testimonials-content::-webkit-scrollbar-thumb {
     background: $color-orange; 
-    
     border-radius: 5px;
   }
   
@@ -199,18 +191,21 @@
     z-index: 10000;
     min-width: 300px;
     max-width: 300px;
-
+   
     display: flex;
     align-items: center;
     margin: 0 auto;
     height: auto;
     padding-bottom: 30px;
 
-  
-    
     @include media-tablet{
         height: auto;
-        width: 300px;
+       
+    }
+
+    @include media-mobilesmall{
+        width: auto;
+        margin: 0 12px;
     }
     }
 
@@ -223,7 +218,6 @@
         left: 0;
         right: 0;
         background: rgba(0, 0, 0, 0.3);
-
     }
 
 

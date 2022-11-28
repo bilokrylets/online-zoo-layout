@@ -53,7 +53,7 @@ const radioInputs = document.querySelectorAll('.radio-amount');
 const donateNumber = document.querySelector('.donate-form-number');
 const values = []
 radioInputs.forEach(input => values.push(input.value));
-console.log(values);
+// console.log(values);
 
 
 function raioNumberConnection(e) {

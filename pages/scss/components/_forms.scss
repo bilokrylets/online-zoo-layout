@@ -2,11 +2,11 @@
 
     .form-label {
         display: block;
-
         font-size: 24px;
         color: #FFFFFF;
         margin-bottom: 14px;
     }
+    
     .form-email {
         width: 228px;
         height: 42px;
@@ -18,11 +18,8 @@
         transition: all 0.2 linear;
 
         &::placeholder{
-           
             color: #BDBDBD;
-            font-size: 16px;
-
-           
+            font-size: 16px; 
         }
 
         &:hover, &:active{
@@ -33,6 +30,7 @@
             }
         }
     }
+
     .form-submit{
         width: 129px;
         height: 42px;
@@ -49,7 +47,6 @@
 
 .donate-form {
     display: flex;
-    
     flex-direction: column;
     
     .donate-form-range-label {
@@ -65,8 +62,8 @@
 
     .donate-amount {
         position: relative;
-
         margin: 0 10px;
+
         .donate-amount-line{
             position: absolute;
             top:0;
@@ -75,9 +72,9 @@
             right: 0;
             z-index: 2;
             background-color: #404950;
-
             display: flex;
             align-items: center;
+
             .inside-line{
                 width: 100%;
                 margin: auto 10px;
@@ -86,6 +83,7 @@
             }
 
         }
+
         .donate-amount-container{
             position: sticky;
             z-index: 2;
@@ -97,7 +95,6 @@
     }
 
     .radio-amount-block {
-      
         height: 60px;
 
         @include media-tablet{
@@ -112,26 +109,17 @@
             }
         }
         .radio-amount {
-        
-        transition: all .2s linear;
-           
-          margin-top: 7px;
-          width: 10px;
-          height: 10px;
-         appearance: none;
-          background-color: #eb000000;
-          color: $color-orange;
-          border: 5px solid $color-yellow;
-          border-radius: 50%;
-         
+        transition: all .2s linear;   
+        margin-top: 7px;
+        width: 10px;
+        height: 10px;
+        appearance: none;
+        background-color: #eb000000;
+        color: $color-orange;
+        border: 5px solid $color-yellow;
+        border-radius: 50%; 
         
           &:checked{
-            //   &::after{
-            //     content: '';
-            //     border: 2px solid $color-orange;
-            //     width: 15px;
-            //     height: 15px;
-            //   }
             margin-top: 4px;
             display: flex;
             align-items: center;
@@ -139,10 +127,8 @@
             width: 15px;
             height: 15px;
             box-shadow: #404950 0px 0px 0px 5px,
-              rgb(255, 217, 19) 0px 0px 0px 7px;
-       
-              background-color: $color-yellow;
-
+            rgb(255, 217, 19) 0px 0px 0px 7px;
+            background-color: $color-yellow;
           }
         }
         .amount {
@@ -153,41 +139,7 @@
             color: $color-black_blue;
            }
     }
-    // .radio-amount-block {
-    // }
-    // .radio-amount {
-    // }
-    // .amount {
-    // }
-    // .donate-form-range-container{
-       
-    //     height: 27px;
-    //     background-color: #404950;
-
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-
-    //     .donate-form-range {
-    //         -webkit-appearance: none;
-    //         height: 2px;
-    //         background: #72828E;
-    //         width: 90%; 
-
-    //        &::-webkit-slider-thumb {
-    //         -webkit-appearance: none;
-    //         height: 10px;
-    //         width: 10px;
-    //         border-radius: 50%;
-    //         background: $color-yellow;
-    //         cursor: ew-resize;
-    //         }
-
-         
-    //     }
-    // }
     
-
     .donate-form-number {
         margin: 50px auto 25px;
         padding-left: 15px;
@@ -203,9 +155,7 @@
 
         &::placeholder{
             font-size: 16px;
-            color: #929699;
-            
-            
+            color: #929699;    
         }
 
         &:hover, &:active{
@@ -215,13 +165,11 @@
                 color: $color-green;
             }
         }
-
         
         @include media-mobile{
             width: 180px;
             height: 42px;
             padding-left: 10px;
-           
         }
     }
 
@@ -229,16 +177,15 @@
         display: flex;
         justify-content: center;
         gap: 50px;
+
         .donate-form-radio-label {
             display: flex;
             gap: 10px;
             font-weight: 400;
             font-size: 16px;
             color: $color-black_blue;
-        
             
-            .donate-form-radio {
-                
+            .donate-form-radio {  
                 width: 16px;
                 appearance: none;
                 background-color: #00000000;
@@ -251,17 +198,10 @@
                 &:checked{
                     border: 2px solid $color-orange;
                     background-color: #f97f4b8e
-    
                 }
             }
-
-          
-
-
         }
     }
-
-
    
     .donate-btn {
         margin: 31px auto 0;

@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
 }
+
 .pick-feed-content-container {
     margin: 69px 30px 100px;
  
@@ -34,10 +35,12 @@
 
     @include media-tablet{
         margin-top: 10px;
+        font-size: 42px;
         @include font(42px);
     }
 
     @include media-mobile{
+        font-size: 24px;
         @include font(24px);
     }
 }
@@ -69,6 +72,7 @@
             text-align: center
         }
     }
+
     .pick-feed-bold-text {
         @include font(16px,500);
         color: $color-black_blue;
@@ -77,6 +81,7 @@
             display: none
         }
     }
+
     .pick-feed-text {
         font-size: 16px;
         margin-right: 198px;
@@ -89,11 +94,10 @@
         @include media-mobile{
             display: none
         }
-        a{
-           
+
+        a{ 
             text-decoration: underline;
-            text-decoration-color: $color-orange;
-            
+            text-decoration-color: $color-orange;   
         }
     }
 }
@@ -127,11 +131,11 @@
     @include media-laptopsmall{
         gap:20px
     }
+
     @include media-tablet{   
         width: min(90%, 600px);
         padding: 0 20px;
-        justify-content: space-between;
-        
+        justify-content: space-between; 
         margin: 0 auto ;
     }
 
@@ -139,8 +143,10 @@
         flex-direction: column;
         justify-content: center;
     }
+
     .pick-card {
         width: 168px;
+
         @include media-laptopsmall{
             width: 160px;
         }
@@ -150,7 +156,6 @@
             width: 168px;
         }
 
-       
         .pick-card-img{
             height: 166px;
             background-color: #fff;
@@ -168,8 +173,6 @@
             @include media-mobile{
                 height: 166px;
             }
-
-           
         }
         .pick-card-text {
             margin-top: 30px;
@@ -196,15 +199,14 @@
     @include media-tablet{
         display: flex;
         margin-left: 30%;
-       gap: 38%;
+        gap: 38%;
 
         .arrow-tablet-container{
-        
             height: 29px;
             position: relative;
             margin-bottom: -10px;
+
             .arrow-tablet{
-                
                 position: absolute;
                 z-index: 20;
             }

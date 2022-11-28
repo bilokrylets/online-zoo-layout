@@ -36,6 +36,7 @@
             }
         }
     }
+
     .animal-cards-bg-flower-right{
         position: absolute;
         margin: -5px;
@@ -54,6 +55,7 @@
             }
         }
     }
+
     .animal-cards-wrapper {
         display: flex;
         align-items: center;
@@ -67,8 +69,6 @@
         }
     }
 }
-
-
 
  .cards-arrow{  
     min-width: 62px;
@@ -88,25 +88,19 @@
         }
      }
 
-    &.left {
-    // opacity: 0;
-    }
     img{
         width: 20px;
         height: 10px;
     }
 
-    &.unactive{
+    &.unactive {
         background-color: $color-gray;
 
-        &:hover{
-            background-color: $color-gray
-        }
-    
-        &:active {
+        &:hover, &:active{
             background-color: $color-gray
         }
     }
+
     @include media-laptop{
         position: absolute;
 
@@ -122,7 +116,6 @@
     @include media-mobile{
         display: none;
     }
-   
     
     &:hover{
         background-color: #E47209
@@ -159,8 +152,6 @@
     overflow: hidden;
     
     gap: 2%;
-    // gap:20px;
-
     scroll-behavior: smooth;
    
     @include media-laptopsmall{
@@ -169,8 +160,11 @@
     }
 
     @include media-mobile{  
-       
+        max-width:320px;
         row-gap: 20px;
+    }
+    @include media-mobilesmall{
+        max-width:270px;
     }
 }
 
@@ -186,8 +180,6 @@
    
     justify-content: space-between;
     min-width: 31.5%;
-    // min-width: 285px;
-    // min-height: 332px;
 
     @include media-laptopsmall{
         min-width: 47%
@@ -207,15 +199,14 @@
         border-top-left-radius: 3px;
         width: 100%;
         aspect-ratio: 1/1;
-        // max-height: 85%;
         object-fit: cover;
         margin-bottom: 8px;
     }
     .card-text {
         padding-left: 15px;
         margin-bottom: 10px;
+
         .card-title {
-            // margin-top: 8px;
             font-weight: 500;
             color: #000000;
             text-transform: uppercase;
@@ -225,8 +216,8 @@
             color: #000000;
         }
     }
-    .eats-icon {
-        
+    
+    .eats-icon {    
         height: 38px;
         margin-bottom: 14px;
         margin-right: 8px;

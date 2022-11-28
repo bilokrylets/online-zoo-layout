@@ -1,9 +1,8 @@
   .header{
    position: relative;
   }
-  .header-wrapper {
-   
 
+  .header-wrapper {
     display: flex;
     height: 80px;
     background-color: #000000;
@@ -28,7 +27,6 @@
 }
 
 .header-left-part{
-    
     display: flex;
     gap: 63px;
 
@@ -55,7 +53,6 @@
 
     .navigation-item {
         list-style-type: none;
-
         a{
             text-decoration: none;
             color: #fff;
@@ -71,7 +68,6 @@
 
  .header-author-tag {
     @include font(16,500);
-    // font-weight: 500;
     
     &.active{
         color: $color-orange
@@ -83,12 +79,12 @@
 
     @include media-tablet{
         display:inline-block;
+        transition: all 0.2s linear;
 
         img{
             height: 10px;
         }
 
-        transition: all 0.2s linear;
         &:hover{
             filter: brightness(0) saturate(100%) invert(55%) sepia(93%) saturate(1058%) hue-rotate(350deg) brightness(102%) contrast(99%);   
         }
@@ -99,7 +95,7 @@
 //  Donate
 
 .header-bg-wrapper{
-    background-image:url("/assets/images/watch-bg.jpg") ;
+    background-image:url("../../assets/images/watch-bg.jpg") ;
     height: 590px;
     margin-top: -200px;
     position: relative;

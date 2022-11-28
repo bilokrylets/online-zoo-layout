@@ -1,18 +1,15 @@
-
 .footer-wrapper {
     background: #111115;
     display: flex;
-    justify-content: center;
-
-    
+    justify-content: center;  
 }
+
 .footer-content{
     margin: 41px 30px 50px;
-   width: 1160px;
+    width: 1160px;
 
     @include media-tablet{
         margin: 12px 20px;
-        
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -26,17 +23,13 @@
 
 .footer-content-first-line {
     display: flex;
-
     justify-content: space-between;
-
     
     @include media-tablet{
-
         flex-direction: column;
         
         .footer-form{
-            display: none;
-           
+            display: none;   
         }
     }
     
@@ -46,8 +39,7 @@
         }
     }
     @include media-mobile{
-        justify-content: center;
-        
+        justify-content: center;  
     }
 
     .footer-btn-tablet{
@@ -55,12 +47,8 @@
 
         @include media-tablet{
             margin-top: 32px;
-            display: flex;
-            
+            display: flex;  
         }
-
-        
-
     }
 }
 
@@ -92,7 +80,6 @@
        
        @include media-mobile{
         gap: 0;
- 
         justify-content: space-around;
        }
     }
@@ -102,8 +89,8 @@
         p:first-child{
             margin-bottom: 10px;
         }
+
         p{
-            
             @include font(16px,100);
             
             @include media-mobile{
@@ -116,7 +103,6 @@
         @include media-mobile{
          display: flex;
          flex-wrap: wrap;
-         
          order: -1;
          margin-bottom: 30px;
 
@@ -128,16 +114,13 @@
     
     @include media-tablet{
         width: 100%;
-    }
-
-    
+    }    
 }
 
 .socials {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-
     
     @include media-tablet{
         display: none;
@@ -145,11 +128,9 @@
     .social {
         display: flex;
         align-items: center;
-        gap: 12px;
-
-       
-        
+        gap: 12px;     
     }
+
     .social-icon {
         width: 26px;
         height: 26px;
@@ -159,14 +140,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
         transition: all 0.2s linear;
     
         &:hover, &:active{
              background-color: $color-green;
-             cursor: pointer;
-
-             
+             cursor: pointer;     
         }
 
    
@@ -179,20 +157,20 @@
             }
         }
     }
+
     p{
         font-size: 16px;
+
         &:hover, &:active{
             color: $color-green;
             cursor: pointer;
        }
-
     }
 
     @include media-mobile{
         flex-direction: row;
         gap: 30px;
-        margin-top: 20px;
-        
+        margin-top: 20px; 
     }
 }
 
