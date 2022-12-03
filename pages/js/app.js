@@ -3,74 +3,70 @@
 const burger = document.querySelector('#burgerMenu');
 const burgerBg = document.querySelector('#burgerBg');
 const openBurger = document.querySelector('#burgerOpen');
-const closeBurger = document.querySelector('#burgerClose');  
+const closeBurger = document.querySelector('#burgerClose');
 
-function toggleBurger(e){
-    e.preventDefault()
-    burger.classList.toggle('show-burger');
-    burgerBg.classList.toggle('burger-bg');
-
+function toggleBurger(e) {
+  e.preventDefault();
+  burger.classList.toggle('show-burger');
+  burgerBg.classList.toggle('burger-bg');
 }
 
-openBurger.addEventListener('click',toggleBurger);
-closeBurger.addEventListener('click',toggleBurger);
+openBurger.addEventListener('click', toggleBurger);
+closeBurger.addEventListener('click', toggleBurger);
 
-burgerBg.addEventListener('click',(e) =>{
-    if( e.target === burgerBg){
-        burger.classList.toggle('show-burger');
-        burgerBg.classList.toggle('burger-bg');
-    } 
+burgerBg.addEventListener('click', (e) => {
+  if (e.target === burgerBg) {
+    burger.classList.toggle('show-burger');
+    burgerBg.classList.toggle('burger-bg');
+  }
 });
-
 
 // testimonails
 
-const cards= document.querySelectorAll('.testimonials-card');
-const background= document.querySelector('.bg')
+const cards = document.querySelectorAll('.testimonials-card');
+const background = document.querySelector('.bg');
 
+cards.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault();
+    item.classList.add('card-active');
+    background.classList.add('dark-bg');
+  });
+});
 
+cards.forEach((item) => {
+  background.addEventListener('click', (e) => {
+    e.preventDefault();
+    item.classList.remove('card-active');
+    background.classList.remove('dark-bg');
+  });
+});
 
-cards.forEach((item)=>{
-    item.addEventListener('click',(e)=>{
-        e.preventDefault();
-        item.classList.add('card-active');
-        background.classList.add('dark-bg');
-    })
-})
-
-cards.forEach((item)=>{
-    background.addEventListener('click',(e)=>{
-        e.preventDefault();
-        item.classList.remove('card-active');
-        background.classList.remove('dark-bg');
-    })
-})
-
-
-//  radio - numbers connection 
+//  radio - numbers connection
 
 const radioInputs = document.querySelectorAll('.radio-amount');
 const donateNumber = document.querySelector('.donate-form-number');
-const values = []
-radioInputs.forEach(input => values.push(input.value));
+const values = [];
+radioInputs.forEach((input) => values.push(input.value));
 // console.log(values);
 
-
-function raioNumberConnection(e) {
-    if (values.includes(donateNumber.value)) {
-        let checked1 = document.querySelector(`input[name=donate][value='${donateNumber.value}']`)
-        checked1.checked = true
-    }
+function raioNumberConnection() {
+  if (values.includes(donateNumber.value)) {
+    const checked1 = document.querySelector(
+      // eslint-disable-next-line function-paren-newline
+      `input[name=donate][value='${donateNumber.value}']`);
+    checked1.checked = true;
+  }
 }
-raioNumberConnection()
+raioNumberConnection();
 
-donateNumber.addEventListener('input',raioNumberConnection)
+donateNumber.addEventListener('input', raioNumberConnection);
 
-radioInputs.forEach(radio =>{
-    radio.addEventListener('click',(e) =>{
-        donateNumber.value = radio.value
-    })
-})
+radioInputs.forEach((radio) => {
+  radio.addEventListener('click', () => {
+    donateNumber.value = radio.value;
+  });
+});
 
 // const radioInputs = document.querySelectorAll('.funding-amount__form-input');
 // const amount = document.getElementById('another-amount');

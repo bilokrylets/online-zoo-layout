@@ -1,26 +1,26 @@
 .watch-wrapper {
-    background-image:url("../../assets/images/watch-bg.jpg") ;
+    background-image: url("../../assets/images/watch-bg.jpg");
     height: 780px;
     display: flex;
     justify-content: right;
-    
-    @include media-laptop{
-        background-size:cover;
+
+    @include media-laptop {
+        background-size: cover;
         height: 584px;
     }
 
-    @include media-laptopsmall{
-        background-size:1150px;
+    @include media-laptopsmall {
+        background-size: 1150px;
         height: 504px;
     }
 
-    @include media-tablet{
-        background-size:800px;
+    @include media-tablet {
+        background-size: 800px;
         height: 340px;
-       flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
-    @include media-mobile{
+    @include media-mobile {
         height: 180px;
         background-size: 500px;
     }
@@ -29,23 +29,22 @@
 .watch-content {
     min-width: 50%;
     margin-top: 15px;
-    @include media-laptop{
+    @include media-laptop {
         margin-top: -10px;
     }
 
-    @include media-tablet{
+    @include media-tablet {
         margin-top: 10px;
     }
 
-    @include media-mobile{
+    @include media-mobile {
         margin-top: 20px;
     }
-
 }
 
 .watch-title {
     position: relative;
-    
+
     .decoration-round {
         position: absolute;
         background-color: $color-orange;
@@ -53,48 +52,48 @@
         width: 465px;
         border-radius: 50%;
 
-        @include media-laptop{
+        @include media-laptop {
             height: 367px;
             width: 367px;
         }
 
-        @include media-tablet{
+        @include media-tablet {
             height: 237.6px;
             width: 237.6px;
         }
 
-        @include media-mobile{
+        @include media-mobile {
             height: 119px;
             width: 119px;
         }
-        }
+    }
 
-    h1{
+    h1 {
         position: relative;
         z-index: 2;
         display: block;
         width: 500px;
         padding-left: 73px;
         padding-top: 74px;
-        @include font(106.496px,700,75%);
-       
+        @include font(106.496px, 700, 75%);
+
         text-transform: uppercase;
         text-align: center;
 
-        @include media-laptop{
+        @include media-laptop {
             padding-left: 0px;
             padding-top: 54px;
-            @include font(85px,700,75%)
+            @include font(85px, 700, 75%);
         }
 
-        @include media-tablet{
+        @include media-tablet {
             padding-top: 37px;
             margin-left: 37px;
             width: 256px;
             font-size: 54.3px;
         }
 
-        @include media-mobile{
+        @include media-mobile {
             padding-top: 20px;
             margin-left: 5px;
             width: 150px;
@@ -105,52 +104,51 @@
             color: $color-yellow;
         }
     }
-    
 }
 
 .watch-btn {
     margin-left: 180px;
     margin-top: 60px;
 
-    @include media-laptop{
+    @include media-laptop {
         margin: 47px auto 0;
     }
 
-    @include media-tablet{
+    @include media-tablet {
         display: none;
     }
 }
 
-.watch-btn-container{
+.watch-btn-container {
     width: 100%;
     margin-left: 20px;
     display: none;
 
-    @include media-tablet{
-        display:block;
+    @include media-tablet {
+        display: block;
     }
 
-    @include media-mobile{
+    @include media-mobile {
         display: none;
     }
-    
-    .watch-btn-tablet{
+
+    .watch-btn-tablet {
         display: none;
-        
-        @include media-tablet{
+
+        @include media-tablet {
             display: flex;
         }
 
-        @include media-mobile{
+        @include media-mobile {
             display: none;
         }
     }
 }
 
-.watch-btn-mobile{
+.watch-btn-mobile {
     display: none;
-    
-    @include media-mobile{
+
+    @include media-mobile {
         display: flex;
         margin: 20px auto 0;
     }

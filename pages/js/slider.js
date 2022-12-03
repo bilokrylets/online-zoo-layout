@@ -1,31 +1,37 @@
-const carousel = document.querySelector('.cards-content-line.first'),
-    carousel2 = document.querySelector('.cards-content-line.second'),
-    firstCard= carousel.querySelectorAll('.animal-card')[0],
-    secondCard= carousel.querySelectorAll('.animal-card')[1],
-    arrowIcons = document.querySelectorAll('.cards-arrow ');
+/* eslint-disable function-paren-newline */
+const carousel = document.querySelector('.cards-content-line.first');
+const carousel2 = document.querySelector('.cards-content-line.second');
+const firstCard = carousel.querySelectorAll('.animal-card')[0];
+const secondCard = carousel.querySelectorAll('.animal-card')[1];
+const arrowIcons = document.querySelectorAll('.cards-arrow ');
 
-let gap = Math.abs((firstCard.offsetLeft + firstCard.clientWidth) - secondCard.offsetLeft);
+const gap = Math.abs(
+  firstCard.offsetLeft + firstCard.clientWidth - secondCard.offsetLeft);
 
-let CardWidth = firstCard.clientWidth + gap;
-
+const CardWidth = firstCard.clientWidth + gap;
 
 const showHideIcons = () => {
-    let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
-    carousel.scrollLeft <= 0  ? arrowIcons[0].classList.add('unactive') : arrowIcons[0].classList.remove('unactive')
-    carousel.scrollLeft >= scrollWidth - 200 ? arrowIcons[1].classList.add('unactive') :  arrowIcons[1].classList.remove('unactive')
-}
+  const scrollWidth = carousel.scrollWidth - carousel.clientWidth;
+  if (carousel.scrollLeft <= 0) {
+    arrowIcons[0].classList.add('unactive');
+  } else {
+    arrowIcons[0].classList.remove('unactive');
+  }
 
-arrowIcons.forEach(icon => {
-    icon.addEventListener('click',()=> {
-       
-        carousel.scrollLeft += icon.id =='arrowLeft' ? -CardWidth : CardWidth;
-        carousel2.scrollLeft += icon.id =='arrowLeft' ? -CardWidth : CardWidth;
-        setTimeout(()=> showHideIcons(), 60);
-    })
-})
+  if (carousel.scrollLeft >= scrollWidth - 200) {
+    arrowIcons[1].classList.add('unactive');
+  } else {
+    arrowIcons[1].classList.remove('unactive');
+  }
+};
 
-
-
+arrowIcons.forEach((icon) => {
+  icon.addEventListener('click', () => {
+    carousel.scrollLeft += icon.id === 'arrowLeft' ? -CardWidth : CardWidth;
+    carousel2.scrollLeft += icon.id === 'arrowLeft' ? -CardWidth : CardWidth;
+    setTimeout(() => showHideIcons(), 60);
+  });
+});
 
 // // dragging
 
@@ -53,8 +59,6 @@ arrowIcons.forEach(icon => {
 //     prevScrollLeft = carousel.scrollLeft
 // }
 
-
-
 // const dragging = (e) => {
 //     if(!isDragStart) return
 //     e.preventDefault()
@@ -73,12 +77,9 @@ arrowIcons.forEach(icon => {
 // carousel.addEventListener('mousedown',dragStart)
 // carousel.addEventListener('touchstart',dragStart)
 
-
 // carousel.addEventListener('mousemove', dragging)
 // carousel.addEventListener('touchmove', dragging)
-
 
 // carousel.addEventListener('mouseup', dragStop)
 // carousel.addEventListener('mouseleave', dragStop)
 // carousel.addEventListener('touchend', dragStop)
-

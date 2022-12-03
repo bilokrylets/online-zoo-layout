@@ -1,12 +1,11 @@
 .footer-form {
-
     .form-label {
         display: block;
         font-size: 24px;
-        color: #FFFFFF;
+        color: #ffffff;
         margin-bottom: 14px;
     }
-    
+
     .form-email {
         width: 228px;
         height: 42px;
@@ -17,24 +16,25 @@
         padding: 0 10px;
         transition: all 0.2 linear;
 
-        &::placeholder{
-            color: #BDBDBD;
-            font-size: 16px; 
+        &::placeholder {
+            color: #bdbdbd;
+            font-size: 16px;
         }
 
-        &:hover, &:active{
+        &:hover,
+        &:active {
             border: 1px solid $color-green;
 
-            &::placeholder{
+            &::placeholder {
                 color: $color-green;
             }
         }
     }
 
-    .form-submit{
+    .form-submit {
         width: 129px;
         height: 42px;
-        background: #F1F3F2;
+        background: #f1f3f2;
         border: 1px solid $color-green;
         border-radius: 5px;
         margin-left: 10px;
@@ -44,19 +44,18 @@
     }
 }
 
-
 .donate-form {
     display: flex;
     flex-direction: column;
-    
+
     .donate-form-range-label {
         font-weight: 400;
         font-size: 16px;
         color: #000000;
         margin-bottom: 10px;
 
-        @include media-tablet{
-           margin-left: 12px;
+        @include media-tablet {
+            margin-left: 12px;
         }
     }
 
@@ -64,9 +63,9 @@
         position: relative;
         margin: 0 10px;
 
-        .donate-amount-line{
+        .donate-amount-line {
             position: absolute;
-            top:0;
+            top: 0;
             bottom: 50%;
             left: 0;
             right: 0;
@@ -75,61 +74,59 @@
             display: flex;
             align-items: center;
 
-            .inside-line{
+            .inside-line {
                 width: 100%;
                 margin: auto 10px;
                 border: 1px solid $color-gray_smoky;
                 border-bottom: 0px;
             }
-
         }
 
-        .donate-amount-container{
+        .donate-amount-container {
             position: sticky;
             z-index: 2;
             display: flex;
             justify-content: space-between;
             margin: 3px 10px 0px;
         }
-        
     }
 
     .radio-amount-block {
         height: 60px;
 
-        @include media-tablet{
+        @include media-tablet {
             &:first-child {
                 display: none;
             }
-          }
+        }
 
-        @include media-mobile{
-            &:nth-child(2){
-                display: none; 
+        @include media-mobile {
+            &:nth-child(2) {
+                display: none;
             }
         }
         .radio-amount {
-        transition: all .2s linear;   
-        margin-top: 7px;
-        width: 10px;
-        height: 10px;
-        appearance: none;
-        background-color: #eb000000;
-        color: $color-orange;
-        border: 5px solid $color-yellow;
-        border-radius: 50%; 
-        
-          &:checked{
-            margin-top: 4px;
-            display: flex;
-            align-items: center;
+            transition: all 0.2s linear;
+            margin-top: 7px;
+            width: 10px;
+            height: 10px;
+            appearance: none;
+            background-color: #eb000000;
+            color: $color-orange;
+            border: 5px solid $color-yellow;
+            border-radius: 50%;
 
-            width: 15px;
-            height: 15px;
-            box-shadow: #404950 0px 0px 0px 5px,
-            rgb(255, 217, 19) 0px 0px 0px 7px;
-            background-color: $color-yellow;
-          }
+            &:checked {
+                margin-top: 4px;
+                display: flex;
+                align-items: center;
+
+                width: 15px;
+                height: 15px;
+                box-shadow: #404950 0px 0px 0px 5px,
+                    rgb(255, 217, 19) 0px 0px 0px 7px;
+                background-color: $color-yellow;
+            }
         }
         .amount {
             height: 50%;
@@ -137,9 +134,9 @@
             font-size: 26px;
             padding-top: 6px;
             color: $color-black_blue;
-           }
+        }
     }
-    
+
     .donate-form-number {
         margin: 50px auto 25px;
         padding-left: 15px;
@@ -153,27 +150,28 @@
         font-weight: 600;
         font-size: 20px;
 
-        &::placeholder{
+        &::placeholder {
             font-size: 16px;
-            color: #929699;    
+            color: #929699;
         }
 
-        &:hover, &:active{
+        &:hover,
+        &:active {
             border: 1px solid $color-green;
 
-            &::placeholder{
+            &::placeholder {
                 color: $color-green;
             }
         }
-        
-        @include media-mobile{
+
+        @include media-mobile {
             width: 180px;
             height: 42px;
             padding-left: 10px;
         }
     }
 
-    .donate-radio-container{
+    .donate-radio-container {
         display: flex;
         justify-content: center;
         gap: 50px;
@@ -184,8 +182,8 @@
             font-weight: 400;
             font-size: 16px;
             color: $color-black_blue;
-            
-            .donate-form-radio {  
+
+            .donate-form-radio {
                 width: 16px;
                 appearance: none;
                 background-color: #00000000;
@@ -194,18 +192,16 @@
                 height: 16px;
                 border: 1px solid $color-orange;
                 border-radius: 50%;
-               
-                &:checked{
+
+                &:checked {
                     border: 2px solid $color-orange;
-                    background-color: #f97f4b8e
+                    background-color: #f97f4b8e;
                 }
             }
         }
     }
-   
+
     .donate-btn {
         margin: 31px auto 0;
-    } 
+    }
 }
-
-

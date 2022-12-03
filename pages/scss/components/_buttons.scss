@@ -1,4 +1,4 @@
-.btn-rounded{
+.btn-rounded {
     display: block;
     width: 298px;
     height: 54px;
@@ -10,13 +10,13 @@
     align-items: center;
 
     color: #fff;
-    text-decoration: none; 
-    @include font(16px,500);
+    text-decoration: none;
+    @include font(16px, 500);
     text-transform: uppercase;
     transition: all 0.2s linear;
 
-    &:hover{
-        background-color: #E47209
+    &:hover {
+        background-color: #e47209;
     }
 
     &:active {
@@ -38,13 +38,13 @@
     align-items: center;
 
     color: #fff;
-    text-decoration: none; 
-    @include font(16px,500);
+    text-decoration: none;
+    @include font(16px, 500);
     text-transform: uppercase;
     transition: all 0.2s linear;
-    
-    &:hover{
-        background-color: #E47209
+
+    &:hover {
+        background-color: #e47209;
     }
 
     &:active {

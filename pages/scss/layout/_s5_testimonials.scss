@@ -4,13 +4,13 @@
     position: relative;
     display: flex;
     justify-content: center;
-  
-    @include media-laptopsmall{
+
+    @include media-laptopsmall {
         padding-top: 100px;
         padding-bottom: 140px;
     }
 
-    @include media-tablet{
+    @include media-tablet {
         padding-top: 60px;
         padding-bottom: 85px;
     }
@@ -20,19 +20,19 @@
         padding-bottom: 70px;
     }
 }
-.testimonial-bg-leaf{
+.testimonial-bg-leaf {
     position: absolute;
     bottom: 0;
     right: 0;
-   }
+}
 
 .testimonials-title {
     text-align: center;
     @include font(36px);
     color: $color-black_blue;
     margin-bottom: 47px;
-    
-    @include media-mobile{
+
+    @include media-mobile {
         font-size: 24px;
         margin-bottom: 20px;
     }
@@ -42,33 +42,32 @@
     margin: 0 30px;
     display: flex;
     flex-wrap: nowrap;
-    
+
     gap: 29px;
     scroll-behavior: smooth;
-    
-    &.scrollable{
-        overflow-x:scroll;
-        
+
+    &.scrollable {
+        overflow-x: scroll;
     }
-    @include media-laptopsmall{
-        gap:2.1%
+    @include media-laptopsmall {
+        gap: 2.1%;
     }
-   
-    @include media-tablet{
+
+    @include media-tablet {
         height: 370px;
         flex-wrap: wrap;
         gap: 15px;
 
-        &.scrollable{
+        &.scrollable {
             overflow-x: hidden;
             overflow-y: scroll;
         }
-        &:last-child{
+        &:last-child {
             height: auto;
         }
     }
 
-    @include media-mobile{
+    @include media-mobile {
         margin: 0 12px;
     }
 }
@@ -79,23 +78,23 @@
     min-width: 265px;
     height: 385px;
 
-    background-color: $color-gray_light ;
+    background-color: $color-gray_light;
     border: 1px solid pink;
     border-radius: 20px;
     margin-bottom: 20px;
     user-select: none;
 
-    @include media-laptop{
+    @include media-laptop {
         min-width: 31%;
     }
-    
-    @include media-tablet{
+
+    @include media-tablet {
         margin-bottom: 0px;
         height: 110px;
         margin-right: 10px;
     }
 
-    &:hover{
+    &:hover {
         cursor: pointer;
     }
 }
@@ -104,11 +103,11 @@
     display: flex;
     margin: 16px 15px 0 15px;
 
-    img{
+    img {
         width: 37px;
         height: 37px;
         border-radius: 50%;
-        object-fit:cover
+        object-fit: cover;
     }
 
     .testimonial-card-author {
@@ -119,71 +118,67 @@
         }
 
         .testimonals-details {
-            @include font(15px,300);
-            color: #BDBDBD;
+            @include font(15px, 300);
+            color: #bdbdbd;
         }
     }
 }
-
 
 .testimonial-card-text {
     margin: 10px 15px 0px;
     height: 75%;
     margin-bottom: 20px;
     overflow: hidden;
-   
-    @include font(15px,300);
+
+    @include font(15px, 300);
     color: $color-gray;
     line-height: 120%;
 
-    @include media-tablet{
+    @include media-tablet {
         height: 33%;
     }
 }
 
-.testimonials-btn{
+.testimonials-btn {
     margin-top: 60px;
 
-    @include media-tablet{
+    @include media-tablet {
         margin: 40px auto 0;
     }
 
-    @include media-mobile{
+    @include media-mobile {
         margin: 30px auto 0;
     }
 }
 
-
 .testimonials-content::-webkit-scrollbar {
     width: 8px;
     height: 8px;
-  }
+}
 
-  .testimonials-content::-webkit-scrollbar-track {
+.testimonials-content::-webkit-scrollbar-track {
     background: whitesmoke;
     border: 1px solid wheat;
-    border-radius: 5px; 
+    border-radius: 5px;
     margin: 0 100px;
 
-    @include media-tablet{
+    @include media-tablet {
         margin: 50px 0;
     }
-  }
-   
-  /* Handle */
-  .testimonials-content::-webkit-scrollbar-thumb {
-    background: $color-orange; 
+}
+
+/* Handle */
+.testimonials-content::-webkit-scrollbar-thumb {
+    background: $color-orange;
     border-radius: 5px;
-  }
-  
-  /* Handle on hover */
-  .testimonials-content::-webkit-scrollbar-thumb:hover {
-    background: $color-orange;; 
-  }
+}
 
-  
+/* Handle on hover */
+.testimonials-content::-webkit-scrollbar-thumb:hover {
+    background: $color-orange;
+}
 
-  .card-active{
+.card-active {
     position: fixed;
     top: 20%;
     left: 0;
@@ -191,34 +186,30 @@
     z-index: 10000;
     min-width: 300px;
     max-width: 300px;
-   
+
     display: flex;
     align-items: center;
     margin: 0 auto;
     height: auto;
     padding-bottom: 30px;
 
-    @include media-tablet{
+    @include media-tablet {
         height: auto;
-       
     }
 
-    @include media-mobilesmall{
+    @include media-mobilesmall {
         width: auto;
         margin: 0 12px;
     }
-    }
+}
 
-    .dark-bg{
-        transition: all .3s linear;
-        position: fixed;
-        z-index: 9999;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, 0.3);
-    }
-
-
-  
+.dark-bg {
+    transition: all 0.3s linear;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+}

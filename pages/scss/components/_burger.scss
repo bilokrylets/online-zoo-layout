@@ -1,5 +1,5 @@
-.burger-bg{
-    transition: all .4s linear;
+.burger-bg {
+    transition: all 0.4s linear;
     position: fixed;
     z-index: 2000;
     background: rgba(0, 0, 0, 0.3);
@@ -7,9 +7,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    
 }
-
 
 .burger-menu {
     display: none;
@@ -17,56 +15,60 @@
     z-index: 1000;
     top: 0;
     right: -100%;
-    width: max(40%,200px);
+    width: max(40%, 200px);
     height: 100%;
     padding: 12px 20px 12px 12px;
-    transition: all .4s linear;
+    transition: all 0.4s linear;
 
-    &.show-burger{
+    &.show-burger {
         right: 0%;
     }
 
     @include media-tablet {
         display: flex;
-        background:white;
+        background: white;
         flex-direction: column;
-        justify-content: left; 
-    }   
+        justify-content: left;
+    }
 }
 
-.burger-top-line{
+.burger-top-line {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-.burger-logo {
-    width: 58px;
-    height: 36px;
-    @include font(15px,400,120%);
-    color: #FE9013;
+    .burger-logo {
+        width: 58px;
+        height: 36px;
+        @include font(15px, 400, 120%);
+        color: #fe9013;
 
-    border: 1px solid #FE9013;
-    border-radius: 2px;
-    text-align: center;
-    position: relative;
+        border: 1px solid #fe9013;
+        border-radius: 2px;
+        text-align: center;
+        position: relative;
 
-    img{
-        position: absolute;
-        height: 15px;
-        top:46%;
-        left: 9%;
-        filter: brightness(0) saturate(100%) invert(55%) sepia(93%) saturate(1058%) hue-rotate(350deg) brightness(102%) contrast(99%);       
+        img {
+            position: absolute;
+            height: 15px;
+            top: 46%;
+            left: 9%;
+            filter: brightness(0) saturate(100%) invert(55%) sepia(93%)
+                saturate(1058%) hue-rotate(350deg) brightness(102%)
+                contrast(99%);
+        }
     }
-}
 
-.burger-close{
-   
-img{
-    transition: all 0.2s linear;
-    &:hover{
-        filter: brightness(0) saturate(100%) invert(55%) sepia(93%) saturate(1058%) hue-rotate(350deg) brightness(102%) contrast(99%);   
+    .burger-close {
+        img {
+            transition: all 0.2s linear;
+            &:hover {
+                filter: brightness(0) saturate(100%) invert(55%) sepia(93%)
+                    saturate(1058%) hue-rotate(350deg) brightness(102%)
+                    contrast(99%);
+            }
+        }
     }
-}}
 }
 
 .burger-nav {
@@ -79,14 +81,15 @@ img{
     .burger-nav-item {
         list-style-type: none;
 
-        a{
+        a {
             transition: all 0.2s linear;
             font-size: 16px;
             color: black;
             text-decoration: none;
 
-            &.active, &:hover{
-                color: $color-orange
+            &.active,
+            &:hover {
+                color: $color-orange;
             }
         }
     }
