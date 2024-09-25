@@ -1,6 +1,6 @@
 # RSS Online-zoo
 
-#### project implementation ( https://bilokrylets.github.io/study-online-zoo/pages/index.html)
+#### project implementation (https://bilokrylets.github.io/online-zoo-layout/pages/index.html)
 
 This project is a responsive webpage built using HTML, SCSS, and JavaScript. It is based on a design provided in Figma, which I converted into a functional webpage.
 
