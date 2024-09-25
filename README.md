@@ -1,6 +1,6 @@
 # RSS Online-zoo
 
-#### project implementation ( https://4believy.github.io/study-online-zoo/pages/index.html)
+#### project implementation ( https://bilokrylets.github.io/study-online-zoo/pages/index.html)
 
 #### main page
 <img src="https://user-images.githubusercontent.com/104754418/204102388-0acd78ec-b771-4f83-b6ac-e29324f4c28d.png" width=80% >
